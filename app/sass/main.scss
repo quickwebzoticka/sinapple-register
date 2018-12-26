@@ -1,0 +1,52 @@
+@import "libs.scss";
+@import "_reset.scss";
+@import "_vars.scss";
+
+a:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Museo sans';
+}
+
+.wrapper {
+	overflow: hidden;
+}
+
+.order-form {
+	max-width: 358px;
+	margin: 0 auto;
+	padding: 15px 0;
+	display: none;
+	&.active {
+		display: block;
+	}
+}
+
+.sinapple-tabs {
+	max-width: 358px;
+	margin: 0 auto;
+	padding: 15px 0;
+	display: flex;
+	justify-content: space-between;
+	&-item {
+		flex: 0 1 45%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 10px 0;
+		border: 1px solid #999;
+		cursor: pointer;
+		border-radius: 3px;
+		opacity: 0.7;
+		&.active {
+			opacity: 1;
+		}
+	}
+}

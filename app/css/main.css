@@ -1,0 +1,82 @@
+@import url(../css/bootstrap.min.css);
+@import url(../css/normalize.css);
+@font-face {
+  font-family: "Museo sans";
+  src: url(../fonts/MuseoSansCyrl.otf);
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Museo sans bold";
+  src: url(../fonts/MuseoSansCyrl_3.otf);
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Light.ttf);
+  font-weight: 300;
+  font-style: normal; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+a:focus {
+  outline: none;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+body {
+  font-family: 'Museo sans'; }
+
+.wrapper {
+  overflow: hidden; }
+
+.order-form {
+  max-width: 358px;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: none; }
+  .order-form.active {
+    display: block; }
+
+.sinapple-tabs {
+  max-width: 358px;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .sinapple-tabs-item {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 45%;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 0;
+    border: 1px solid #999;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    opacity: 0.7; }
+    .sinapple-tabs-item.active {
+      opacity: 1; }
